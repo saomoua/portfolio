@@ -7,9 +7,12 @@ body {
   padding: 0;
 }
 
-.header {
+.site-header {
   background-color: #000;
   color: #fff;
+}
+
+.sticky-sidebar {
   height: 100%;
   left: 0;
   padding: 50px;
