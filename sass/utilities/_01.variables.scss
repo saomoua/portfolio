@@ -1,9 +1,3 @@
 $color-black: #000;
 $color-gray: #999;
 $color-white: #fff;
-
-@mixin container($max-width: 90%) {
-    margin: auto;
-    max-width: $max-width;
-    overflow: hidden;
-}
