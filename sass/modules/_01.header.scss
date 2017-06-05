@@ -21,4 +21,7 @@
         @include span(12 of 12);
         display: block;
     }
+    img {
+        max-width: 100%;
+    }
 }

@@ -27,10 +27,6 @@ body {
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 .main-contents {
   width: 83.05085%;
   float: right;
@@ -70,6 +66,10 @@ img {
   margin-left: 0;
   margin-right: 0;
   display: block;
+}
+
+.site-branding img {
+  max-width: 100%;
 }
 
 .nav-wrapper {
