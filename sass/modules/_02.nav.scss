@@ -1,8 +1,10 @@
 .nav-wrapper {
     @include span(12 of 12);
     clear: both;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 25px 0;
+    @include breakpoint($large) {
+        margin: 50px 0;
+    }
 }
 
 .sidebar-nav {
@@ -10,14 +12,23 @@
     left: 0;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
     text-align: right;
+    @include breakpoint($large) {
+        padding: 0;
+    }
     li {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+        @include breakpoint($large) {
+            margin-bottom: 50px;
+        }
     }
     a {
         color: $color-white;
-        font-size: 24px;
+        font-size: $base-font-size;
         text-decoration: none;
+        @include breakpoint($large) {
+            font-size: 24px;
+        }
     }
 }
