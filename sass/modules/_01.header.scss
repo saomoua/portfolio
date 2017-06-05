@@ -4,12 +4,13 @@
 }
 
 .sticky-sidebar {
+    @include span(3 of 12);
     height: 100%;
     left: 0;
+    max-width: 300px;
     padding: 50px;
     position: fixed;
     top: 0;
-    width: 300px;
 }
 
 .site-branding {

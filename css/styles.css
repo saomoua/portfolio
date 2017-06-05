@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 
+.page-wrapper,.main-contents {
+  *zoom: 1;
+}
+
+.page-wrapper:before,.main-contents:before,.page-wrapper:after,.main-contents:after {
+  content: "";
+  display: table;
+}
+
+.page-wrapper:after,.main-contents:after {
+  clear: both;
+}
+
+*,html,:root,*::before,*::after {
+  box-sizing: border-box;
+  *behavior: url("js/boxsizing.htc");
+}
+
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,11 +29,11 @@ img {
   max-width: 100%;
 }
 
-.page-wrapper,.main-contents {
-  display: block;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+.main-contents {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+  max-width: 1550px;
 }
 
 .site-header {
@@ -24,12 +42,15 @@ img {
 }
 
 .sticky-sidebar {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
   height: 100%;
   left: 0;
+  max-width: 300px;
   padding: 50px;
   position: fixed;
   top: 0;
-  width: 300px;
 }
 
 .site-branding {

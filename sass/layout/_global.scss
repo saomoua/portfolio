@@ -1,3 +1,8 @@
+// Box-Sizing fix for Float Heights.
+*, html, :root, *::before, *::after {
+    @include box-sizing(border-box);
+}
+
 body {
     font-family: $font-body;
     font-size: $base-font-size;
@@ -10,12 +15,12 @@ img {
 }
 
 .page-wrapper, .main-contents {
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
+    @extend %clearfix;
 }
 
 .page-wrapper {}
 
-.main-contents {}
+.main-contents {
+    @include span(last 9 of 12 no-gutters);
+    max-width: 1550px;
+}
