@@ -1,0 +1,7 @@
+.site-footer {
+    @include span(12 of 12);
+    clear: both;
+    color: $color-gray;
+    margin: 50px 0;
+    text-align: center;
+}
