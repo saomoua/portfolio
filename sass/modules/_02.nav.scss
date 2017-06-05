@@ -15,11 +15,15 @@
         @include span(last 12 of 12);
     }
     a {
+        border: 0;
         color: $color-white;
         display: block;
         font-size: 24px;
         padding: 20px 0;
         text-decoration: none;
-        @include breakpoint($large) {}
+        &:focus, &:hover {
+            border: 0;
+            color: darken($color-white, 25%);
+        }
     }
 }

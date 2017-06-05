@@ -145,11 +145,17 @@ body a:focus,body a:hover {
 }
 
 .sidebar-nav a {
+  border: 0;
   color: #fff;
   display: block;
   font-size: 24px;
   padding: 20px 0;
   text-decoration: none;
+}
+
+.sidebar-nav a:focus,.sidebar-nav a:hover {
+  border: 0;
+  color: #bfbfbf;
 }
 
 .section-area {
