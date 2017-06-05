@@ -2,3 +2,5 @@ $color-black: #000;
 $color-blue: #000b97;
 $color-gray: #999;
 $color-white: #fff;
+$color-headlines: $color-black;
+$color-text: lighten($color-black, 30%);
