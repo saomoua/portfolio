@@ -4,3 +4,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+img {
+    max-width: 100%;
+}
+
+.page-wrapper, .main-contents {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.page-wrapper {}
+
+.main-contents {}
