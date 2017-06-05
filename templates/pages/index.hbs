@@ -1,0 +1,30 @@
+{{!-- pages/index.hbs --}}
+
+{{#> layouts/home
+    title="Home"
+    bodyClass="page-home"
+}}
+
+{{#*inline "nav-block"}}
+{{> global/nav}}
+{{/inline}}
+
+{{#*inline "intro-home-block"}}
+{{> includes/intro-home}}
+{{/inline}}
+
+{{#*inline "hours-block"}}
+{{> includes/business-hours}}
+{{/inline}}
+
+{{#*inline "ads-block"}}
+{{> includes/ads}}
+{{/inline}}
+
+{{#*inline "social-media-block"}}
+{{> includes/social-media
+        social-icon-color="white"
+    }}
+{{/inline}}
+
+{{/layouts/home}}
