@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 
-.page-wrapper,.main-contents,.section-content,.section-text {
+.page-wrapper,.main-contents,.section-area,.section-content,.section-text {
   *zoom: 1;
 }
 
-.page-wrapper:before,.main-contents:before,.section-content:before,.section-text:before,.page-wrapper:after,.main-contents:after,.section-content:after,.section-text:after {
+.page-wrapper:before,.main-contents:before,.section-area:before,.section-content:before,.section-text:before,.page-wrapper:after,.main-contents:after,.section-area:after,.section-content:after,.section-text:after {
   content: "";
   display: table;
 }
 
-.page-wrapper:after,.main-contents:after,.section-content:after,.section-text:after {
+.page-wrapper:after,.main-contents:after,.section-area:after,.section-content:after,.section-text:after {
   clear: both;
 }
 
@@ -106,12 +106,14 @@ img {
   text-decoration: none;
 }
 
-.section-content {
+.section-area {
   font-size: 24px;
-  margin: 0 0 50px;
+  margin: 0;
+  padding: 0;
 }
 
-.section-text--intro {
+.section-content {
+  margin: 0;
   padding: 50px 0;
 }
 
@@ -153,6 +155,7 @@ img {
 .section-title {
   font-size: 36px;
   font-weight: 300;
+  margin: 0;
 }
 
 .section-subtitle {

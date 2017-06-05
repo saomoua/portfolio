@@ -1,13 +1,20 @@
-.section-content {
+.section-area {
     @extend %clearfix;
     font-size: 24px;
-    margin: 0 0 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.section-content {
+    @extend %clearfix;
+    margin: 0;
+    padding: 50px 0;
 }
 
 .section-text {
     @extend %clearfix;
     @at-root #{&}--intro {
-        padding: 50px 0;
+        
     }
     @at-root #{&}--desc {
         font-size: 20px;
@@ -35,6 +42,7 @@
 .section-title {
     font-size: 36px;
     font-weight: $font-weight-light;
+    margin: 0;
 }
 
 .section-subtitle {
