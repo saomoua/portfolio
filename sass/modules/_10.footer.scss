@@ -1,7 +1,14 @@
 .site-footer {
     @include span(12 of 12);
+    bottom: 0;
     clear: both;
     color: $color-gray;
-    margin: 50px 0;
+    left: 0;
+    margin: 25px 0;
+    position: absolute;
+    right: 0;
     text-align: center;
+    @include breakpoint($large) {
+        margin: 50px 0;
+    }
 }

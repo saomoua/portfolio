@@ -83,9 +83,13 @@ img {
   float: left;
   margin-left: 0;
   margin-right: 0;
+  bottom: 0;
   clear: both;
   color: #999;
-  margin: 50px 0;
+  left: 0;
+  margin: 25px 0;
+  position: absolute;
+  right: 0;
   text-align: center;
 }
 
@@ -113,5 +117,9 @@ img {
 
   .sidebar-nav a {
     font-size: 24px;
+  }
+
+  .site-footer {
+    margin: 50px 0;
   }
 }
