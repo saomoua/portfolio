@@ -39,8 +39,9 @@ var paths = {
             '*.html'
         ],
         css: 'css',
-        handlebarsPartials: 'partials',
-        handlebars: '**/*.hbs',
+        handlebarsPages: 'templates/pages/*.hbs',
+        handlebarsPartials: 'templates/partials',
+        handlebars: 'templates/**/*.hbs',
         html: '*.html',
         images: 'images/*.{png,jpg,jpeg,gif,svg}',
         js: [
@@ -51,7 +52,7 @@ var paths = {
         svg: 'images/*.svg'
     },
     output: {
-        dir: '',
+        dir: './',
         css: 'css',
         images: 'images/',
         js: 'js'
@@ -90,8 +91,7 @@ var sourceMapOptions = {
 
 // BEGIN TASKS
 gulp.task('html', () => {
-    //return gulp.src(paths.input.handlebarsPages)
-    return gulp.src(paths.input.handlebars)
+    return gulp.src(paths.input.handlebarsPages)
         .pipe(handlebars({}, {
             ignorePartials: true,
             batch: [paths.input.handlebarsPartials]
@@ -153,7 +153,7 @@ gulp.task('copyToDist', function () {
 
 gulp.task('connect', function () {
     connect.server({
-        root: './',
+        root: '.',
         livereload: true
     });
 });
