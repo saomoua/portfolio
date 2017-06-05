@@ -33,7 +33,7 @@
     @at-root #{&}--wide {
         @include span(last 7 of 12);
         img {
-            @include box-shadow();
+            @include box-shadow;
         }
     }
     @at-root #{&}--narrow {
