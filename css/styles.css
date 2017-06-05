@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 
-.page-wrapper,.main-contents {
+.page-wrapper,.main-contents,.section-content,.section-text {
   *zoom: 1;
 }
 
-.page-wrapper:before,.main-contents:before,.page-wrapper:after,.main-contents:after {
+.page-wrapper:before,.main-contents:before,.section-content:before,.section-text:before,.page-wrapper:after,.main-contents:after,.section-content:after,.section-text:after {
   content: "";
   display: table;
 }
 
-.page-wrapper:after,.main-contents:after {
+.page-wrapper:after,.main-contents:after,.section-content:after,.section-text:after {
   clear: both;
 }
 
@@ -22,6 +22,7 @@ body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -103,6 +104,48 @@ img {
   font-size: 24px;
   padding: 20px 0;
   text-decoration: none;
+}
+
+.section-content {
+  font-size: 24px;
+}
+
+.section-text {
+  padding: 50px 0;
+}
+
+.section-text--wide {
+  width: 57.62712%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.section-text--narrow {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.section-image--wide {
+  width: 57.62712%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.section-image--narrow {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.title-emphasis {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .site-footer {
