@@ -1,10 +1,6 @@
 $color-black: #000;
-$color-charcoal: #333;
 $color-gray: #999;
 $color-white: #fff;
-$color-maroon: #662602;
-$color-red: #900;
-$color-cream: #ffe0cc;
 
 @mixin container($max-width: 90%) {
     margin: auto;
