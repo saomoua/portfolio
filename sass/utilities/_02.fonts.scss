@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+$font-fallback-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-body: 'Montserrat', $font-fallback-body;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+@mixin font-body($family: $font-body, $size: $base-font-size, $weight: 300) {
+    font-family: $family;
+    font-weight: $weight;
+}
+
+@mixin font-body-size($size: $base-font-size, $line-height: $base-line-height) {
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin font-headline($family: $font-body, $weight: 700) {
+    font-family: $family;
+    font-weight: $weight;
+}
+
+@mixin font-headline-size($size: 24px, $line-height: 1.2) {
+    font-size: $size;
+    line-height: $line-height;
+}
