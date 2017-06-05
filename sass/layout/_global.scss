@@ -6,7 +6,7 @@
 body {
     font-family: $font-body;
     font-size: $base-font-size;
-    font-weight: $font-body-weight;
+    font-weight: $font-weight-light;
     line-height: $base-line-height;
     margin: 0;
     padding: 0;
@@ -23,6 +23,6 @@ img {
 .page-wrapper {}
 
 .main-contents {
-    @include span(last 9 of 12 no-gutters);
+    @include span(last 10 of 12 no-gutters);
     max-width: 1550px;
 }
