@@ -32,7 +32,7 @@ img {
 }
 
 .main-contents {
-  width: 74.57627%;
+  width: 83.05085%;
   float: right;
   margin-right: 0;
   max-width: 1550px;
@@ -44,12 +44,12 @@ img {
 }
 
 .sticky-sidebar {
-  width: 23.72881%;
+  width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   height: 100%;
   left: 0;
-  max-width: 300px;
+  min-width: 200px;
   padding: 50px;
   position: fixed;
   top: 0;
@@ -108,10 +108,22 @@ img {
 
 .section-content {
   font-size: 24px;
+  margin: 0 0 50px;
 }
 
-.section-text {
+.section-text--intro {
   padding: 50px 0;
+}
+
+.section-text--desc {
+  font-size: 20px;
+}
+
+.section-text--full {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .section-text--wide {
@@ -121,26 +133,32 @@ img {
 }
 
 .section-text--narrow {
-  width: 23.72881%;
+  width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
 }
 
 .section-image--wide {
   width: 57.62712%;
-  float: left;
-  margin-right: 1.69492%;
+  float: right;
+  margin-right: 0;
 }
 
 .section-image--narrow {
-  width: 23.72881%;
-  float: left;
-  margin-right: 1.69492%;
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
 }
 
 .section-title {
   font-size: 36px;
   font-weight: 300;
+}
+
+.section-subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .title-emphasis {

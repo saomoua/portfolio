@@ -1,34 +1,49 @@
 .section-content {
     @extend %clearfix;
     font-size: 24px;
+    margin: 0 0 50px;
 }
 
 .section-text {
     @extend %clearfix;
-    padding: 50px 0;
+    @at-root #{&}--intro {
+        padding: 50px 0;
+    }
+    @at-root #{&}--desc {
+        font-size: 20px;
+    }
+    @at-root #{&}--full {
+        @include span(12 of 12);
+    }
     @at-root #{&}--wide {
         @include span(7 of 12);
     }
     @at-root #{&}--narrow {
-        @include span(3 of 12);
+        @include span(4 of 12);
     }
 }
 
 .section-image {
     @at-root #{&}--wide {
-        @include span(7 of 12);
+        @include span(last 7 of 12);
     }
     @at-root #{&}--narrow {
-        @include span(3 of 12);
+        @include span(last 4 of 12);
     }
 }
 
 .section-title {
     font-size: 36px;
-    font-weight: $font-body-weight;
+    font-weight: $font-weight-light;
+}
+
+.section-subtitle {
+    font-size: 30px;
+    font-weight: $font-weight-regular;
+    margin: 0;
 }
 
 .title-emphasis {
-    font-weight: $font-headline-weight;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
 }
