@@ -9,13 +9,12 @@
     @extend %clearfix;
     margin: 0;
     padding: 50px 0;
+    @at-root #{&}--intro {}
+    @at-root #{&}--details {}
 }
 
 .section-text {
     @extend %clearfix;
-    @at-root #{&}--intro {
-        
-    }
     @at-root #{&}--desc {
         font-size: 20px;
     }
