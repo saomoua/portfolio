@@ -54,6 +54,7 @@ body a:after,.page-wrapper:after,.main-contents:after,.section-area:after,.secti
 }
 
 body {
+  color: #4d4d4d;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -92,6 +93,7 @@ body a:focus,body a:hover {
   height: 100%;
   left: 0;
   min-width: 200px;
+  overflow: visible;
   padding: 50px;
   position: fixed;
   top: 0;
@@ -215,12 +217,14 @@ body a:focus,body a:hover {
 }
 
 .section-title {
+  color: #000;
   font-size: 36px;
   font-weight: 300;
   margin: 0;
 }
 
 .section-subtitle {
+  color: #000;
   font-size: 30px;
   font-weight: 400;
   margin: 0;
@@ -267,13 +271,9 @@ body a:focus,body a:hover {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  bottom: 0;
   clear: both;
   color: #999;
-  left: 0;
   margin: 50px 0;
-  position: absolute;
-  right: 0;
   text-align: center;
 }
 
