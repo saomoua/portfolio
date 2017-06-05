@@ -32,6 +32,9 @@
 .section-image {
     @at-root #{&}--wide {
         @include span(last 7 of 12);
+        img {
+            @include box-shadow();
+        }
     }
     @at-root #{&}--narrow {
         @include span(last 4 of 12);

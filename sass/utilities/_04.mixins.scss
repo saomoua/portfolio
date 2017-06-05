@@ -1,4 +1,4 @@
-@mixin box-shadow($horiz: 0, $vert: 3px, $blur: 3px, $spread: 0, $color: rgba($color-black, 0.4)) {
+@mixin box-shadow($horiz: 0, $vert: 3px, $blur: 5px, $spread: 0, $color: rgba($color-black, 0.25)) {
     box-shadow: $horiz $vert $blur $spread $color;
 }
 
