@@ -111,7 +111,13 @@ body a:focus,body a:hover {
   float: left;
   margin-left: 0;
   margin-right: 0;
+  border: 0;
   display: block;
+}
+
+.site-branding a:focus,.site-branding a:hover {
+  color: transparent;
+  border: 0;
 }
 
 .site-branding img {

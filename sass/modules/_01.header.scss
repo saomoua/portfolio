@@ -19,7 +19,12 @@
     text-align: center;
     a {
         @include span(12 of 12);
+        border: 0;
         display: block;
+        &:focus, &:hover {
+            color: transparent;
+            border: 0;
+        }
     }
     img {
         max-width: 100%;
