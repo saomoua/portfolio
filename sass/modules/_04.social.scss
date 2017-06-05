@@ -1,0 +1,21 @@
+.social-media {
+    @extend %clearfix;
+    @at-root #{&}--list {
+        @extend %list-reset;
+        li {
+            @include span(2.25 of 12);
+        }
+        .fa {
+            float: left;
+            font-size: 48px;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+        }
+    }
+    @at-root #{&}--label {
+        float: left;
+        padding: 8px 10px;
+    }
+}
