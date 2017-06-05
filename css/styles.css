@@ -26,9 +26,10 @@ img {
 .sticky-sidebar {
   height: 100%;
   left: 0;
+  padding: 50px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 300px;
 }
 
 .site-branding {
@@ -36,7 +37,7 @@ img {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin: 25px 0;
+  margin: 50px 0;
   text-align: center;
 }
 
@@ -54,7 +55,7 @@ img {
   margin-left: 0;
   margin-right: 0;
   clear: both;
-  margin: 25px 0;
+  margin: 50px 0;
 }
 
 .sidebar-nav {
@@ -64,7 +65,7 @@ img {
   left: 0;
   list-style: none;
   margin: 0;
-  padding: 0 50px;
+  padding: 0;
   text-align: right;
 }
 
@@ -77,7 +78,7 @@ img {
 .sidebar-nav a {
   color: #fff;
   display: block;
-  font-size: 16px;
+  font-size: 24px;
   padding: 20px 0;
   text-decoration: none;
 }
@@ -91,35 +92,8 @@ img {
   clear: both;
   color: #999;
   left: 0;
-  margin: 25px 0;
+  margin: 50px 0;
   position: absolute;
   right: 0;
   text-align: center;
-}
-
-@media (min-width: 960px) {
-  .sticky-sidebar {
-    padding: 50px;
-    width: 300px;
-  }
-
-  .site-branding {
-    margin: 50px 0;
-  }
-
-  .nav-wrapper {
-    margin: 50px 0;
-  }
-
-  .sidebar-nav {
-    padding: 0;
-  }
-
-  .sidebar-nav a {
-    font-size: 24px;
-  }
-
-  .site-footer {
-    margin: 50px 0;
-  }
 }
