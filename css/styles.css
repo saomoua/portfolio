@@ -28,7 +28,7 @@ body {
   margin-top: 50px;
 }
 
-.site-nav {
+.sidebar-nav {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -39,11 +39,11 @@ body {
   text-align: right;
 }
 
-.site-nav li {
+.sidebar-nav li {
   margin-bottom: 50px;
 }
 
-.site-nav a {
+.sidebar-nav a {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
