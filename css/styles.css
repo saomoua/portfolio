@@ -7,6 +7,17 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+.page-wrapper,.main-contents {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
 .site-header {
   background-color: #000;
   color: #fff;
@@ -15,10 +26,26 @@ body {
 .sticky-sidebar {
   height: 100%;
   left: 0;
-  padding: 50px;
   position: fixed;
   top: 0;
-  width: 300px;
+  width: 100%;
+}
+
+.site-branding {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.site-branding a {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
 }
 
 .nav-wrapper {
@@ -61,4 +88,15 @@ body {
   color: #999;
   margin: 50px 0;
   text-align: center;
+}
+
+@media (min-width: 960px) {
+  .sticky-sidebar {
+    padding: 50px;
+    width: 300px;
+  }
+
+  .site-branding {
+    margin: 50px 0;
+  }
 }
