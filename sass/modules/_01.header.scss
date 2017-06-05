@@ -4,10 +4,10 @@
 }
 
 .sticky-sidebar {
-    @include span(3 of 12);
+    @include span(2 of 12);
     height: 100%;
     left: 0;
-    max-width: 300px;
+    min-width: 200px;
     padding: 50px;
     position: fixed;
     top: 0;
