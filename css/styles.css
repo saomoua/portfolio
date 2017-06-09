@@ -9,6 +9,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-vcard-o:before,.fa-address-card-o:before {
+  content: "\f2bc";
+}
+
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
 .fa-deviantart:before {
   content: "\f1bd";
 }
@@ -23,6 +31,10 @@
 
 .fa-facebook-official:before {
   content: "\f230";
+}
+
+.fa-user-circle-o:before {
+  content: "\f2be";
 }
 
 .fa-youtube-play:before {

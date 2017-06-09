@@ -9,12 +9,20 @@
 //"tp" = tweak point
 //
 
-$large: 960px;
+$small: 480px;
+$small-wide: 640px;
+$medium-tall: 760px;
+$medium-wide: 960px;
+$large: 1100px;
 
 //
 //Repeat list only because I dont think Breakpoint Sass can use these variables
 //These values have to be displayed in a list
 //
 $breakpoints: (
-    large: 960px
+    small: 480px,
+    small-wide: 640px,
+    medium-tall: 760px,
+    medium-wide: 960px,
+    large: 1100px
 );
