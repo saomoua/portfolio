@@ -39,6 +39,13 @@
     @at-root #{&}--narrow {
         @include span(last 4 of 12);
     }
+    @at-root #{&}-headline {
+        @include font-headline($font-body, $font-weight-regular);
+        @include font-headline-size(20px, 1.2);
+        background: transparent url("../../images/portfolio-before-after-bg.jpg") 0 0 repeat-y;
+        margin: 0;
+        padding: 10px;
+    }
 }
 
 .section-title {
