@@ -1,20 +1,22 @@
 {
-    "name": "portfolio",
-    "description": "Professional Portfolio",
-    "authors": [
-        "Sao Moua"
-    ],
-    "homepage": "",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "breakpoint-sass": "^2.6.1",
-        "jquery": "~1.11.x",
-        "sassy-maps": "<1.0.0",
-        "susy": "^2.2.12"
-    }
+  "name": "portfolio",
+  "description": "Professional Portfolio",
+  "authors": [
+    "Sao Moua"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.6.1",
+    "jquery": "~1.11.x",
+    "sassy-maps": "<1.0.0",
+    "susy": "^2.2.12",
+    "normalize-scss": "normalize.scss#^7.0.0",
+    "normalize-css": "^7.0.0"
+  }
 }
