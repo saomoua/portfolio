@@ -3,8 +3,7 @@
     background-color: $color-black;
     color: $color-white;
     display: block;
-    height: 100px;
-    min-height: 100px;
+    height: $site-header-height-mobile;
     padding: 10px;
     z-index: 100;
     @include breakpoint($medium-wide) {

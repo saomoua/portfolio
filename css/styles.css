@@ -361,12 +361,15 @@ body a:focus,body a:hover {
   overflow: hidden;
 }
 
+.main-contents {
+  padding-top: 100px;
+}
+
 .site-header {
   background-color: #000;
   color: #fff;
   display: block;
   height: 100px;
-  min-height: 100px;
   padding: 10px;
   z-index: 100;
 }
