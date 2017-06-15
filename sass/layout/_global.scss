@@ -22,6 +22,9 @@ body {
         }
     }
 }
+.container {
+    @include container;
+}
 
 .page-wrapper, .main-contents {
     @extend %clearfix;
@@ -30,6 +33,8 @@ body {
 .page-wrapper {}
 
 .main-contents {
-    @include span(last 10 of 12 no-gutters);
-    max-width: 1550px;
+    @include breakpoint($medium-wide) {
+        @include span(last 10 of 12 no-gutters);
+        max-width: 1550px;
+    }
 }
