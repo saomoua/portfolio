@@ -1,29 +1,62 @@
 .nav-wrapper {
-    @include span(12 of 12);
-    clear: both;
-    margin: 50px 0;
+    float: right;
+    margin: 5px 0;
+    text-align: center;
+    width: auto;
+    @include breakpoint($medium-tall) {
+        @include span(12 of 12);
+        clear: both;
+        margin: 50px 0;
+    }
+    @at-root #{&}-title {
+        @include font-headline($font-body, $font-weight-light);
+        font-size: 12px;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+    }
 }
 
 .sidebar-nav {
-    @include span(last 12 of 12);
-    left: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    li {
+    @extend %clearfix;
+    @extend %list-reset;
+    @include breakpoint($medium-tall) {
         @include span(last 12 of 12);
+        left: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    li {
+        float: left;
+        margin-right: 20px;
+        width: auto;
+        @include breakpoint($medium-tall) {
+            @include span(last 12 of 12);
+        }
+        &.sidebar-nav-last {
+            margin-right: 0;
+        }
     }
     a {
         border: 0;
         color: $color-white;
+        cursor: pointer;
         display: block;
         font-size: 24px;
-        padding: 20px 0;
         text-decoration: none;
+        @include breakpoint($medium-tall) {
+            padding: 20px 0;
+        }
         &:focus, &:hover {
             border: 0;
             color: darken($color-white, 25%);
+        }
+    }
+    span {
+        display: none;
+        @include breakpoint($medium-tall) {
+            display: inline-block;
         }
     }
 }
