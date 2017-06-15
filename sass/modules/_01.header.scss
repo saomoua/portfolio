@@ -1,23 +1,41 @@
 .site-header {
+    @extend %clearfix;
     background-color: $color-black;
     color: $color-white;
+    display: block;
+    height: 100px;
+    min-height: 100px;
+    padding: 10px;
+    z-index: 100;
+    @include breakpoint($medium-wide) {
+        @include span(2 of 12);
+        height: 100%;
+        min-width: 200px;
+        overflow: visible;
+        padding: 50px;
+    }
 }
 
 .sticky-sidebar {
-    @include span(2 of 12);
-    height: 100%;
     left: 0;
-    min-width: 200px;
-    overflow: visible;
-    padding: 50px;
     position: fixed;
     top: 0;
+    width: 100%;
+    @include breakpoint($medium-tall) {
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
 }
 
 .site-branding {
-    @include span(12 of 12);
-    margin: 50px 0;
-    text-align: center;
+    @include span(4 of 12 no-gutters);
+    margin: 10px 0;
+    @include breakpoint($medium-tall) {
+        @include span(12 of 12);
+        margin: 50px 0;
+        text-align: center;
+    }
     a {
         @include span(12 of 12);
         border: 0;
