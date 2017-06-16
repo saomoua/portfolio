@@ -1,12 +1,15 @@
-//#about {
-//    .section-content--intro {
-//        @include breakpoint($medium-tall) {
-//            padding-top: 0;
-//        }
-//    }
-//    .section-text {
-//        @include breakpoint($medium-tall) {
-//            padding: 50px 0;
-//        }
-//    }
-//}
+#about {
+    .section-image {
+        text-align: center;
+    }
+    //    .section-content--intro {
+    //        @include breakpoint($medium-tall) {
+    //            padding-top: 0;
+    //        }
+    //    }
+    //    .section-text {
+    //        @include breakpoint($medium-tall) {
+    //            padding: 50px 0;
+    //        }
+    //    }
+}

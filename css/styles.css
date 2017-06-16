@@ -528,6 +528,10 @@ body a:focus,body a:hover {
   padding: 12px 5px;
 }
 
+#about .section-image {
+  text-align: center;
+}
+
 .site-footer {
   width: 100%;
   float: left;
