@@ -558,6 +558,35 @@ body a:focus,body a:hover {
 }
 
 @media (min-width: 760px) {
+  .social-media--list li {
+    width: 17.37288%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  .social-media--label {
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-contents {
+    width: 83.05085%;
+    float: right;
+    margin-right: 0;
+    max-width: 1550px;
+  }
+
+  .site-header {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    height: 100%;
+    min-width: 200px;
+    overflow: visible;
+    padding: 50px;
+  }
+
   .sticky-sidebar {
     left: 0;
     position: fixed;
@@ -605,35 +634,6 @@ body a:focus,body a:hover {
 
   .sidebar-nav span {
     display: inline-block;
-  }
-
-  .social-media--list li {
-    width: 17.37288%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-
-  .social-media--label {
-    padding: 8px 10px;
-  }
-}
-
-@media (min-width: 960px) {
-  .main-contents {
-    width: 83.05085%;
-    float: right;
-    margin-right: 0;
-    max-width: 1550px;
-  }
-
-  .site-header {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-    height: 100%;
-    min-width: 200px;
-    overflow: visible;
-    padding: 50px;
   }
 
   .section-area {

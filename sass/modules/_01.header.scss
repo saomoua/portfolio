@@ -24,7 +24,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    @include breakpoint($medium-tall) {
+    @include breakpoint($medium-wide) {
         left: 0;
         position: fixed;
         top: 0;
@@ -34,7 +34,7 @@
 .site-branding {
     @include span(4 of 12 no-gutters);
     margin: 10px 0;
-    @include breakpoint($medium-tall) {
+    @include breakpoint($medium-wide) {
         @include span(12 of 12);
         margin: 50px 0;
         text-align: center;
