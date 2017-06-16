@@ -11,12 +11,15 @@
 .section-content {
     @extend %clearfix;
     margin: 0;
-    padding: 15px 0;
-    @include breakpoint($medium-tall) {
-        padding: 30px 0;
+    @at-root #{&}--intro {
+        @include breakpoint($medium-tall) {
+            padding: 50px 0;
+        }
     }
-    @at-root #{&}--intro {}
-    @at-root #{&}--details {}
+    @at-root #{&}--details {
+        border-bottom: 1px dashed rgba($color-black, .25);
+        padding: 50px 0;
+    }
 }
 
 .section-text {
