@@ -24,7 +24,9 @@
     margin: auto;
     width: 90%;
     @at-root #{&}--desc {
-        font-size: 20px;
+        @include breakpoint($medium-tall) {
+            font-size: 20px;
+        }
     }
     @at-root #{&}--full {
         @include breakpoint($medium-tall) {
@@ -77,10 +79,13 @@
 
 .section-subtitle {
     color: $color-headlines;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: $font-weight-regular;
     margin: 0;
     text-transform: uppercase;
+    @include breakpoint($medium-tall) {
+        font-size: 30px;
+    }
 }
 
 .title-emphasis {

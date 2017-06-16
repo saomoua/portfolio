@@ -465,10 +465,6 @@ body a:focus,body a:hover {
   width: 90%;
 }
 
-.section-text--desc {
-  font-size: 20px;
-}
-
 .section-image--wide img {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
@@ -493,7 +489,7 @@ body a:focus,body a:hover {
 
 .section-subtitle {
   color: #000;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   margin: 0;
   text-transform: uppercase;
@@ -599,6 +595,10 @@ body a:focus,body a:hover {
     padding: 30px 0;
   }
 
+  .section-text--desc {
+    font-size: 20px;
+  }
+
   .section-text--full {
     width: 100%;
     float: left;
@@ -628,6 +628,10 @@ body a:focus,body a:hover {
     width: 32.20339%;
     float: right;
     margin-right: 0;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
   }
 }
 
