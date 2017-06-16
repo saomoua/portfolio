@@ -1,5 +1,6 @@
 .section-area {
     @extend %clearfix;
+    border-bottom: 1px solid rgba($color-black, .35);
     margin: 0;
     padding: 0;
     @include breakpoint($medium-tall) {
