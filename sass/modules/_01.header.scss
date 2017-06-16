@@ -6,6 +6,9 @@
     height: $site-header-height-mobile;
     padding: 10px;
     z-index: 100;
+    @include breakpoint($small) {
+        height: $site-header-height-mobile*1.25;
+    }
     @include breakpoint($medium-wide) {
         @include span(2 of 12);
         height: 100%;
