@@ -579,7 +579,6 @@ body a:focus,body a:hover {
 @media (min-width: 960px) {
   .main-contents {
     margin-left: 200px;
-    max-width: 1550px;
   }
 
   .site-header {
