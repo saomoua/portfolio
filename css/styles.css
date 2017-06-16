@@ -403,6 +403,7 @@ body a:focus,body a:hover {
 }
 
 .site-branding img {
+  max-height: 80px;
   max-width: 100%;
 }
 
@@ -548,6 +549,12 @@ body a:focus,body a:hover {
 
   .section-area {
     padding: 150px 0 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .section-text {
+    width: 80%;
   }
 }
 

@@ -28,6 +28,9 @@
     @extend %clearfix;
     margin: auto;
     width: 90%;
+    @include breakpoint($small-wide) {
+        width: 80%;
+    }
     @at-root #{&}--desc {
         @include breakpoint($medium-tall) {
             font-size: 20px;
