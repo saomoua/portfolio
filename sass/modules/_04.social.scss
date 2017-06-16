@@ -24,6 +24,11 @@
         float: left;
         padding: 12px 5px;
         @include breakpoint($medium-tall) {
+            clear: left;
+            padding: 0;
+        }
+        @include breakpoint($medium-wide) {
+            clear: none;
             padding: 8px 10px;
         }
     }
