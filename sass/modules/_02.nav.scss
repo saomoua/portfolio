@@ -13,6 +13,9 @@
         font-size: 12px;
         margin: 0 0 5px;
         text-transform: uppercase;
+        @include breakpoint($medium-wide) {
+            display: none;
+        }
     }
 }
 

@@ -7,12 +7,18 @@
     }
     @include breakpoint($medium-wide) {
         font-size: 24px;
+        padding: 0;
     }
 }
 
 .section-content {
     @extend %clearfix;
     margin: 0;
+    @at-root #{&}__container {
+        @extend %clearfix;
+        margin: auto;
+        max-width: 90%;
+    }
     @at-root #{&}--intro {
         @include breakpoint($medium-wide) {
             padding: 50px 0;
@@ -27,7 +33,11 @@
 .section-text {
     @extend %clearfix;
     @at-root #{&}__container {
+        @extend %clearfix;
         @include container;
+        @include breakpoint($medium-wide) {
+            max-width: 100%;
+        }
     }
     @at-root #{&}--desc {
         @include breakpoint($medium-wide) {
@@ -41,12 +51,12 @@
     }
     @at-root #{&}--wide {
         @include breakpoint($medium-wide) {
-            @include span(7 of 12);
+            @include span(6 of 12);
         }
     }
     @at-root #{&}--narrow {
         @include breakpoint($medium-wide) {
-            @include span(4 of 12);
+            @include span(5 of 12);
         }
     }
 }
