@@ -470,20 +470,8 @@ body a:focus,body a:hover {
   margin-right: 0;
 }
 
-.section-image--wide {
-  width: 57.62712%;
-  float: right;
-  margin-right: 0;
-}
-
 .section-image--wide img {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-}
-
-.section-image--narrow {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
 }
 
 .section-image-headline {
@@ -613,6 +601,18 @@ body a:focus,body a:hover {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
+  }
+
+  .section-image--wide {
+    width: 57.62712%;
+    float: right;
+    margin-right: 0;
+  }
+
+  .section-image--narrow {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
   }
 }
 
