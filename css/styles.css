@@ -464,9 +464,10 @@ body a:focus,body a:hover {
   padding: 50px 0;
 }
 
-.section-text {
+.section-text__container {
   margin: auto;
-  width: 90%;
+  max-width: 90%;
+  overflow: hidden;
 }
 
 .section-image--wide img {
@@ -552,12 +553,6 @@ body a:focus,body a:hover {
   }
 }
 
-@media (min-width: 640px) {
-  .section-text {
-    width: 80%;
-  }
-}
-
 @media (min-width: 760px) {
   .sticky-sidebar {
     left: 0;
@@ -608,6 +603,35 @@ body a:focus,body a:hover {
     display: inline-block;
   }
 
+  .social-media--list li {
+    width: 17.37288%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  .social-media--label {
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-contents {
+    width: 83.05085%;
+    float: right;
+    margin-right: 0;
+    max-width: 1550px;
+  }
+
+  .site-header {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    height: 100%;
+    min-width: 200px;
+    overflow: visible;
+    padding: 50px;
+  }
+
   .section-area {
     font-size: 24px;
   }
@@ -653,34 +677,5 @@ body a:focus,body a:hover {
 
   .section-subtitle {
     font-size: 30px;
-  }
-
-  .social-media--list li {
-    width: 17.37288%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-
-  .social-media--label {
-    padding: 8px 10px;
-  }
-}
-
-@media (min-width: 960px) {
-  .main-contents {
-    width: 83.05085%;
-    float: right;
-    margin-right: 0;
-    max-width: 1550px;
-  }
-
-  .site-header {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-    height: 100%;
-    min-width: 200px;
-    overflow: visible;
-    padding: 50px;
   }
 }

@@ -5,7 +5,7 @@
     @include breakpoint($small) {
         padding: $site-header-height-mobile*1.5 0 0;
     }
-    @include breakpoint($medium-tall) {
+    @include breakpoint($medium-wide) {
         font-size: 24px;
     }
 }
@@ -14,7 +14,7 @@
     @extend %clearfix;
     margin: 0;
     @at-root #{&}--intro {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             padding: 50px 0;
         }
     }
@@ -26,28 +26,26 @@
 
 .section-text {
     @extend %clearfix;
-    margin: auto;
-    width: 90%;
-    @include breakpoint($small-wide) {
-        width: 80%;
+    @at-root #{&}__container {
+        @include container;
     }
     @at-root #{&}--desc {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             font-size: 20px;
         }
     }
     @at-root #{&}--full {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             @include span(12 of 12);
         }
     }
     @at-root #{&}--wide {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             @include span(7 of 12);
         }
     }
     @at-root #{&}--narrow {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             @include span(4 of 12);
         }
     }
@@ -56,7 +54,7 @@
 .section-image {
     @extend %clearfix;
     @at-root #{&}--wide {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             @include span(last 7 of 12);
         }
         img {
@@ -64,7 +62,7 @@
         }
     }
     @at-root #{&}--narrow {
-        @include breakpoint($medium-tall) {
+        @include breakpoint($medium-wide) {
             @include span(last 4 of 12);
         }
     }
@@ -91,7 +89,7 @@
     font-weight: $font-weight-regular;
     margin: 0;
     text-transform: uppercase;
-    @include breakpoint($medium-tall) {
+    @include breakpoint($medium-wide) {
         font-size: 30px;
     }
 }
