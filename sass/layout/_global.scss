@@ -33,7 +33,8 @@ body {
 .page-wrapper {}
 
 .main-contents {
-    margin-top: $site-header-height-mobile;
+    margin: $site-header-height-mobile auto 0;
+    overflow: hidden;
     @include breakpoint($medium-wide) {
         @include span(last 10 of 12 no-gutters);
         max-width: 1550px;
