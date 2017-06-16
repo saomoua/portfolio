@@ -49,31 +49,31 @@
             @include span(12 of 12);
         }
     }
-    @at-root #{&}--wide {
-        @include breakpoint($medium-wide) {
-            @include span(6 of 12);
-        }
-    }
     @at-root #{&}--narrow {
         @include breakpoint($medium-wide) {
             @include span(5 of 12);
+        }
+    }
+    @at-root #{&}--wide {
+        @include breakpoint($medium-wide) {
+            @include span(6 of 12);
         }
     }
 }
 
 .section-image {
     @extend %clearfix;
+    @at-root #{&}--narrow {
+        @include breakpoint($medium-wide) {
+            @include span(last 5 of 12);
+        }
+    }
     @at-root #{&}--wide {
         @include breakpoint($medium-wide) {
-            @include span(last 7 of 12);
+            @include span(last 6 of 12);
         }
         img {
             @include box-shadow;
-        }
-    }
-    @at-root #{&}--narrow {
-        @include breakpoint($medium-wide) {
-            @include span(last 4 of 12);
         }
     }
     @at-root #{&}-headline {

@@ -664,26 +664,26 @@ body a:focus,body a:hover {
     margin-right: 0;
   }
 
-  .section-text--wide {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-
   .section-text--narrow {
     width: 40.67797%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  .section-image--wide {
-    width: 57.62712%;
+  .section-text--wide {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  .section-image--narrow {
+    width: 40.67797%;
     float: right;
     margin-right: 0;
   }
 
-  .section-image--narrow {
-    width: 32.20339%;
+  .section-image--wide {
+    width: 49.15254%;
     float: right;
     margin-right: 0;
   }
