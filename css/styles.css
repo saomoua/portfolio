@@ -530,6 +530,7 @@ body a:focus,body a:hover {
 
 .social-media--label {
   float: left;
+  font-size: 16px;
   padding: 12px 5px;
 }
 
@@ -690,10 +691,5 @@ body a:focus,body a:hover {
 
   .section-subtitle {
     font-size: 30px;
-  }
-
-  .social-media--label {
-    clear: none;
-    padding: 8px 10px;
   }
 }
