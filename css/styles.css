@@ -310,16 +310,16 @@ sup {
   content: "\f16a";
 }
 
-body a,.page-wrapper,.main-contents,.site-header,.sidebar-nav,.section-area,.section-content,.section-text,.social-media {
+body a,.page-wrapper,.main-contents,.site-header,.sidebar-nav,.section-area,.section-content,.section-text,.section-image,.social-media {
   *zoom: 1;
 }
 
-body a:before,.page-wrapper:before,.main-contents:before,.site-header:before,.sidebar-nav:before,.section-area:before,.section-content:before,.section-text:before,.social-media:before,body a:after,.page-wrapper:after,.main-contents:after,.site-header:after,.sidebar-nav:after,.section-area:after,.section-content:after,.section-text:after,.social-media:after {
+body a:before,.page-wrapper:before,.main-contents:before,.site-header:before,.sidebar-nav:before,.section-area:before,.section-content:before,.section-text:before,.section-image:before,.social-media:before,body a:after,.page-wrapper:after,.main-contents:after,.site-header:after,.sidebar-nav:after,.section-area:after,.section-content:after,.section-text:after,.section-image:after,.social-media:after {
   content: "";
   display: table;
 }
 
-body a:after,.page-wrapper:after,.main-contents:after,.site-header:after,.sidebar-nav:after,.section-area:after,.section-content:after,.section-text:after,.social-media:after {
+body a:after,.page-wrapper:after,.main-contents:after,.site-header:after,.sidebar-nav:after,.section-area:after,.section-content:after,.section-text:after,.section-image:after,.social-media:after {
   clear: both;
 }
 
@@ -362,7 +362,7 @@ body a:focus,body a:hover {
 }
 
 .main-contents {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .site-header {
@@ -470,18 +470,6 @@ body a:focus,body a:hover {
   margin-right: 0;
 }
 
-.section-text--wide {
-  width: 57.62712%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
-.section-text--narrow {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
 .section-image--wide {
   width: 57.62712%;
   float: right;
@@ -550,14 +538,6 @@ body a:focus,body a:hover {
   padding: 8px 10px;
 }
 
-#about .section-content--intro {
-  padding-top: 0;
-}
-
-#about .section-text {
-  padding: 50px 0;
-}
-
 .site-footer {
   width: 100%;
   float: left;
@@ -621,6 +601,18 @@ body a:focus,body a:hover {
 
   .sidebar-nav span {
     display: inline-block;
+  }
+
+  .section-text--wide {
+    width: 57.62712%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  .section-text--narrow {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
   }
 }
 

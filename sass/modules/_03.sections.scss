@@ -22,14 +22,19 @@
         @include span(12 of 12);
     }
     @at-root #{&}--wide {
-        @include span(7 of 12);
+        @include breakpoint($medium-tall) {
+            @include span(7 of 12);
+        }
     }
     @at-root #{&}--narrow {
-        @include span(4 of 12);
+        @include breakpoint($medium-tall) {
+            @include span(4 of 12);
+        }
     }
 }
 
 .section-image {
+    @extend %clearfix;
     @at-root #{&}--wide {
         @include span(last 7 of 12);
         img {
