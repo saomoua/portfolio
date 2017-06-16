@@ -35,7 +35,8 @@ body {
 .main-contents {
     overflow: hidden;
     @include breakpoint($medium-wide) {
-        @include span(last 10 of 12 no-gutters);
+        //@include span(last 10 of 12 no-gutters);
+        margin-left: $sticky-sidebar-width-large;
         max-width: 1550px;
     }
 }
