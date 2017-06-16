@@ -451,14 +451,13 @@ body a:focus,body a:hover {
 }
 
 .section-area {
-  font-size: 24px;
   margin: 0;
   padding: 0;
 }
 
 .section-content {
   margin: 0;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .section-text {
@@ -589,6 +588,10 @@ body a:focus,body a:hover {
 
   .sidebar-nav span {
     display: inline-block;
+  }
+
+  .section-area {
+    font-size: 24px;
   }
 
   .section-text--full {
