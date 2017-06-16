@@ -33,7 +33,7 @@ body {
 .page-wrapper {}
 
 .main-contents {
-    padding-top: $site-header-height-mobile;
+    margin-top: $site-header-height-mobile;
     @include breakpoint($medium-wide) {
         @include span(last 10 of 12 no-gutters);
         max-width: 1550px;
