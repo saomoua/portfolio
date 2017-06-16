@@ -362,7 +362,8 @@ body a:focus,body a:hover {
 }
 
 .main-contents {
-  margin-top: 100px;
+  margin: 100px auto 0;
+  overflow: hidden;
 }
 
 .site-header {
@@ -459,15 +460,13 @@ body a:focus,body a:hover {
   padding: 50px 0;
 }
 
-.section-text--desc {
-  font-size: 20px;
+.section-text {
+  margin: auto;
+  width: 90%;
 }
 
-.section-text--full {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+.section-text--desc {
+  font-size: 20px;
 }
 
 .section-image--wide img {
@@ -589,6 +588,13 @@ body a:focus,body a:hover {
 
   .sidebar-nav span {
     display: inline-block;
+  }
+
+  .section-text--full {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .section-text--wide {

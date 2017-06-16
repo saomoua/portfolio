@@ -15,11 +15,15 @@
 
 .section-text {
     @extend %clearfix;
+    margin: auto;
+    width: 90%;
     @at-root #{&}--desc {
         font-size: 20px;
     }
     @at-root #{&}--full {
-        @include span(12 of 12);
+        @include breakpoint($medium-tall) {
+            @include span(12 of 12);
+        }
     }
     @at-root #{&}--wide {
         @include breakpoint($medium-tall) {
