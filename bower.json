@@ -18,5 +18,8 @@
     "susy": "^2.2.12",
     "normalize-scss": "normalize.scss#^7.0.0",
     "normalize-css": "^7.0.0"
+  },
+  "devDependencies": {
+    "lity": "^2.2.2"
   }
 }
